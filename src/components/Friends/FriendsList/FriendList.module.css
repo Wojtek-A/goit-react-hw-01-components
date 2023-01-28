@@ -1,0 +1,48 @@
+.friend-list {
+  margin: 20px auto;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.item {
+  background-color: white;
+  width: 270px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ddd;
+}
+.statusYes {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #4eae50;
+  animation: blinker 1.7s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+}
+.statusNo {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #fd5350;
+}
+.avatar {
+  background-color: #7c4d2b;
+  border-radius: 5px;
+  padding: 5px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+@keyframes blinker {
+  to {
+    opacity: 0;
+  }
+}
